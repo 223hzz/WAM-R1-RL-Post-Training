@@ -1,3 +1,18 @@
+## 🎬 Qualitative Demos & Rollout Videos
+
+We provide qualitative rollout execution demonstrations comparing our **WAM-R1** post-trained policies against the baseline imitation policies across diverse manipulation benchmarks.
+
+### 1. LIBERO Benchmark Compilation (2m 07s)
+This comprehensive video compilation showcases policy rollouts across the majority of tasks in the **LIBERO** suites (Spatial, Object, Goal, and Long-Horizon 10). It demonstrates how WAM-R1's hybrid-window action reasoning eliminates compounding execution drift and actively self-corrects topological trajectory errors under sparse reward feedback without actuator chatter.
+
+* 📹 **Direct Download / Playback**: [`video/libero_demo.mp4`](video/libero_demo.mp4)
+
+2. RoboCasa-GR1 Humanoid Manipulation (Coming Soon)
+⏳ The 29-DoF bi-manual tabletop demonstration video for RoboCasa-GR1 is currently being rendered and curated, and will be updated here shortly.
+
+*(If your browser does not render the inline HTML5 player above, please download the raw `.mp4` directly from the [`video/`](video/) directory).*
+
+
 ## 📦 Checkpoints & Pretrained Models
 
 To adhere to the double-blind review policy and hosting size limits, the full pre-trained base checkpoints and fine-tuned RL policy weights are omitted during the review process. All checkpoints will be publicly released on Hugging Face upon paper acceptance.
