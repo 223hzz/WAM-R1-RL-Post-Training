@@ -48,28 +48,27 @@ bash run_original_awr_libero_10_a100.sh
 
 # Cluster-optimized AWR run on LIBERO Object suite
 bash run_original_awr_object_a100.sh
-### 4. Cluster Job Submission (`dit4dit_submit/`)
+### 4. Cluster Job Submission (`submit/`)
 
 For cluster and distributed execution (e.g., Slurm workload manager on A100 / A800 clusters), batch launch scripts are located in `dit4dit_submit/`:
 
 ```bash
 # 1. Base Model & SFT Training
-sbatch dit4dit_submit/submit_dit4dit_multistream_train.sh
-sbatch dit4dit_submit/submit_dit4dit_train_80000.sh
-sbatch dit4dit_submit/submit_libero_fewshot_sft.sh
+sbatch submit/submit_train_80000.sh
+sbatch submit/submit_libero_fewshot_sft.sh
 
 # 2. Flow-SDE RL Post-Training (RoboCasa & LIBERO)
-sbatch dit4dit_submit/submit_original_flow_sde_sapo_robocasa.sh
-sbatch dit4dit_submit/submit_original_flow_sde_ppo_spatial_all.sh
-sbatch dit4dit_submit/submit_original_flow_sde_ppo_task5.sh
-sbatch dit4dit_submit/submit_original_flow_sde_ppo_task6.sh
-sbatch dit4dit_submit/submit_original_flow_sde_sapo_task5.sh
-sbatch dit4dit_submit/submit_original_flow_sde_sapo_task6.sh
+sbatch submit/submit_original_flow_sde_sapo_robocasa.sh
+sbatch submit/submit_original_flow_sde_ppo_spatial_all.sh
+sbatch submit/submit_original_flow_sde_ppo_task5.sh
+sbatch submit/submit_original_flow_sde_ppo_task6.sh
+sbatch submit/submit_original_flow_sde_sapo_task5.sh
+sbatch submit/submit_original_flow_sde_sapo_task6.sh
 
 # 3. Hardware-Optimized GRPO & AWR (A100 / A800 Clusters)
-sbatch dit4dit_submit/submit_original_grpo_libero_10_a100.sh
-sbatch dit4dit_submit/submit_original_grpo_libero_10_a800.sh
-sbatch dit4dit_submit/submit_original_awr_libero_10_a100.sh
+sbatch submit/submit_original_grpo_libero_10_a100.sh
+sbatch submit/submit_original_grpo_libero_10_a800.sh
+sbatch submit/submit_original_awr_libero_10_a100.sh
 
 # 4. Checkpoint Evaluation
-sbatch dit4dit_submit/submit_dit4dit_eval.sh
+sbatch submit/submit_eval.sh
