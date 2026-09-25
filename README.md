@@ -1,3 +1,5 @@
+> **Note:** This repository is built on top of the original [DiT4DiT](https://dit4dit.github.io/) codebase. Please clone and set up the upstream DiT4DiT repository before running post-training scripts.
+
 ## 🎬 Qualitative Demos & Rollout Videos
 
 We provide qualitative rollout execution demonstrations comparing our **WAM-R1** post-trained policies against the baseline imitation policies across diverse manipulation benchmarks.
